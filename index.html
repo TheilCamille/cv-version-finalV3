@@ -12,7 +12,7 @@
         <title>Curriculum Vitae</title>
     </head>
     <body>
-        <main id="conteneur">
+        <main onload="pageLoad()" id="conteneur">
             <header>
                 <h1>Camille Theil</h1>
                 <h2></h2>
@@ -22,10 +22,15 @@
             </section>
             <aside>
             </aside>
-            <input type="hidden"/>
+            <input id="inputMe" type="hidden"/>
         </main>
         <script src="js/jquery-3.1.1.min.js"></script> <!-- Jquery -->
         <script src="js/typed.js"></script> <!-- Plugin Jquery typed.js -->
         <script type="text/javascript" src="js/core.js"></script> <!-- My script -->
+        <script type="text/javascript">
+        function pageLoad() {
+                document.getElementById('inputMe').focus(); 
+        }
+</script>
     </body>
 </html>
