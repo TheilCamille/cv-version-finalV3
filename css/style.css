@@ -1,0 +1,214 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 88%;
+    height: 79%;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    border: 1px #00A2FF solid;
+    padding: 5%;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+    height: auto;
+    padding: 1%;
+    margin: 0 5% 0 5%;
+    text-align: left;
+    line-height: 160%;
+}
+
+#newArticle2 {
+    height: auto;
+    width: auto;
+    margin-left: 3em;
+    margin-top: 5em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+}
+
+h2 {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    font-size: 32px;
+}
+.devicon-html5-plain {
+    font-size:  2em;
+}
+
+.devicon-css3-plain {
+    font-size: 2em;
+}
+
+.devicon-javascript-plain {
+    font-size: 2em;
+}
+
+.devicon-jquery-plain {
+    font-size: 2em;
+}
+
+.devicon-php-plain {
+    font-size: 2em;
+}
+
+.devicon-mysql-plain {
+    font-size: 2em;
+}
+
+.devicon-nodejs-plain {
+    font-size: 2em;
+}
+
+.devicon-mongodb-plain {
+    font-size: 2em;
+}
+
+.devicon-linux-plain {
+    font-size: 2em;
+}
+
+.devicon-github-plain {
+    font-size: 2em;
+}
+
+.devicon-trello-plain {
+    font-size: 2em;
+}
+
+.devicon-gimp-plain {
+    font-size: 2em;
+}
+
+.devicon-angularjs-plain {
+    font-size: 2em;
+}
+
+.devicon-react-original {
+    font-size: 2em;
+}
+
+.devicon-bootstrap-plain {
+    font-size: 2em;
+}
+
+.devicon-wordpress-plain {
+    font-size: 2em;
+}
+a {
+    color: #00A2FF;
+    
+}
+
+a:visited {
+    color: #00A2FF;
+}
+
+#mario {
+    position: absolute;
+    bottom: 2em;
+    animation-name: mario-running;
+    animation-duration: 7s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+}
+
+#tuyau {
+    height: 18em;
+    position: absolute;
+    bottom: 0.5em;
+    right: -10em;
+    z-index: 2;
+    
+    animation-name: tuyau;
+    animation-duration: 12s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+}
+
+.tuyau-out {
+    animation-name: tuyau-out;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+}
+
+@keyframes mario-running {
+    0% {
+        transform: translateX(-400%);
+    }
+    
+    100% {
+        transform: translateX(500%);
+    }
+}
+@keyframes tuyau {
+    0% {
+        transform: translateX(300%);  
+    }
+    
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+@keyframes tuyau-out {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+@media (max-width: 800px) {
+   main {
+        font-size: 10px;
+    }
+    
+    h1 {
+        position: relative;
+        font-size: 15px;
+    }
+    
+    h2 {
+        position: relative;
+        font-size: 15px;
+    }
+    
+    #content1 {
+        margin-bottom: 8em;
+    }
+}
